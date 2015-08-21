@@ -1,6 +1,5 @@
 package cn.wehax.common.util;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
 import android.util.DisplayMetrics;
@@ -12,12 +11,13 @@ public class WindowUtils {
     /**
      * 获取手机屏幕信息（包括高度、宽度、分辨率等）
      *
-     * @param activity
+     * @param context
      * @return
      */
-    public static DisplayMetrics getDisplayMetrics(Activity activity) {
+    public static DisplayMetrics getDisplayMetrics(Context context) {
         DisplayMetrics dm = new DisplayMetrics();
-        activity.getWindowManager().getDefaultDisplay().getMetrics(dm);
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        wm.getDefaultDisplay().getMetrics(dm);
         return dm;
     }
 

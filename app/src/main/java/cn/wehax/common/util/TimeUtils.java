@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * 时间相关辅助工具
+ * 时间相关的辅助方法
  */
 public class TimeUtils {
     /**
@@ -26,22 +26,53 @@ public class TimeUtils {
     public final static int MINUTE_IN_HOUR = 60;
 
     // 若干日期格式化样式
-    public static final String PATTERN_Y_SLASH_M_SLASH_D_H_COMMA_M = "yyyy/MM/dd HH:mm";
+    public static final String PATTERN_Y_SLASH_M_SLASH_D_H_COMMA_M = "yyyy/MM/dd HH:mm:ss";
     public static final String PATTERN_Y_SLASH_M_SLASH_D = "yyyy/MM/dd";
     public static final String PATTERN_Y_DASH_M_DASH_D = "yyyy-MM-dd";
     public static final String PATTERN_D_SLASH_M_SLASH_Y = "dd/MM/yyyy";
 
     /**
+     * get current time in milliseconds
+     *
+     * @return
+     */
+    public static long getCurrentTimeInLong() {
+        return System.currentTimeMillis();
+    }
+
+    /**
+     * 获取当前格式化时间
+     *
+     * @param pattern 格式化样式
+     * @return
+     */
+    public static String getCurrentFormatTime(String pattern) {
+        return getFormatTime(getCurrentTimeInLong(), pattern);
+    }
+
+    /**
+     * 获取当前格式化时间（使用PATTERN_Y_SLASH_M_SLASH_D_H_COMMA_M格式化样式）
+     *
+     * @return
+     */
+    public static String getCurrentFormatTime() {
+        return getCurrentFormatTime(PATTERN_Y_SLASH_M_SLASH_D_H_COMMA_M);
+    }
+
+    /**
      * 获取格式化日期
      */
-    public static String getFormatDate(Long milliseconds, String pattern) {
+    public static String getFormatTime(Long milliseconds, String pattern) {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 
         return sdf.format(new Date(milliseconds));
     }
 
-    public static String getFormatDate(String milliseconds, String pattern) {
-        return getFormatDate(Long.valueOf(milliseconds), pattern);
+    /**
+     * 获取格式化日期
+     */
+    public static String getFormatTime(String milliseconds, String pattern) {
+        return getFormatTime(Long.valueOf(milliseconds), pattern);
     }
 
     /**
@@ -51,11 +82,11 @@ public class TimeUtils {
      * @param strategy     格式化策略
      * @return
      */
-    public static String getFormatDate(long milliseconds, IDateFormatStrategy strategy) {
+    public static String getFormatTime(long milliseconds, ITimeFormatStrategy strategy) {
         if (strategy == null)
             return null;
 
-        return strategy.formatDate(milliseconds);
+        return strategy.formatTime(milliseconds);
     }
 
     /**
@@ -75,13 +106,12 @@ public class TimeUtils {
     }
 
     /**
-     * 计算两个日期之间相差天数
+     * 获取两个日期之间相隔天数
      *
      * @param millis1 日期1
      * @param millis2 日期2
-     * @return
      */
-    public static int getDateDifference(long millis1, long millis2) {
+    public static int getIntervalDays(long millis1, long millis2) {
         long millisFormer;
         long millisLatter;
 
@@ -117,7 +147,7 @@ public class TimeUtils {
     }
 
     /**
-     * 计算指定日期是星期几
+     * 获取星期数
      *
      * @param milliseconds 日期
      */
@@ -152,14 +182,15 @@ public class TimeUtils {
         return Week;
     }
 
-    public interface IDateFormatStrategy {
+    public interface ITimeFormatStrategy {
         /**
-         * 格式化日期
+         * 格式化时间
          *
-         * @param millisecond 日期
+         * @param millisecond 时间
          * @return
          */
-        String formatDate(long millisecond);
+        String formatTime(long millisecond);
     }
+
 
 }
