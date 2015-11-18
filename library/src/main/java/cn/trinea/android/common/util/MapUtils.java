@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * Map Utils

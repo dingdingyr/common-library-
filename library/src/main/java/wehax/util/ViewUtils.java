@@ -1,4 +1,4 @@
-package cn.wehax.common.util;
+package wehax.util;
 
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,22 +20,22 @@ import java.util.List;
  * ViewUtils
  * <ul>
  * <strong>get view height</strong>
- * <li>{@link cn.wehax.common.util.ViewUtils#getListViewHeightBasedOnChildren(android.widget.ListView)}</li>
- * <li>{@link cn.wehax.common.util.ViewUtils#getAbsListViewHeightBasedOnChildren(android.widget.AbsListView)}</li>
+ * <li>{@link wehax.util.ViewUtils#getListViewHeightBasedOnChildren(android.widget.ListView)}</li>
+ * <li>{@link wehax.util.ViewUtils#getAbsListViewHeightBasedOnChildren(android.widget.AbsListView)}</li>
  * </ul>
  * <ul>
  * <strong>set view height</strong>
- * <li>{@link cn.wehax.common.util.ViewUtils#setViewHeight(android.view.View, int)} set view height</li>
- * <li>{@link cn.wehax.common.util.ViewUtils#setListViewHeightBasedOnChildren(android.widget.ListView)}</li>
- * <li>{@link cn.wehax.common.util.ViewUtils#setAbsListViewHeightBasedOnChildren(android.widget.AbsListView)}</li>
+ * <li>{@link wehax.util.ViewUtils#setViewHeight(android.view.View, int)} set view height</li>
+ * <li>{@link wehax.util.ViewUtils#setListViewHeightBasedOnChildren(android.widget.ListView)}</li>
+ * <li>{@link wehax.util.ViewUtils#setAbsListViewHeightBasedOnChildren(android.widget.AbsListView)}</li>
  * </ul>
  * <ul>
  * <strong>get other info</strong>
- * <li>{@link cn.wehax.common.util.ViewUtils#getGridViewVerticalSpacing(android.widget.GridView)} get GridView vertical spacing</li>
+ * <li>{@link wehax.util.ViewUtils#getGridViewVerticalSpacing(android.widget.GridView)} get GridView vertical spacing</li>
  * </ul>
  * <ul>
  * <strong>set other info</strong>
- * <li>{@link cn.wehax.common.util.ViewUtils#setSearchViewOnClickListener(android.view.View, android.view.View.OnClickListener)}</li>
+ * <li>{@link wehax.util.ViewUtils#setSearchViewOnClickListener(android.view.View, android.view.View.OnClickListener)}</li>
  * </ul>
  * 
  * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2013-12-24

@@ -1,4 +1,4 @@
-package cn.wehax.common.util;
+package wehax.util;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningAppProcessInfo;

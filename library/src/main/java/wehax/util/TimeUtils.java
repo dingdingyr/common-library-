@@ -1,4 +1,4 @@
-package cn.wehax.common.util;
+package wehax.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

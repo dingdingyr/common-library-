@@ -10,7 +10,7 @@ import cn.trinea.android.common.dao.ImageSDCardCacheDao;
 import cn.trinea.android.common.entity.CacheObject;
 import cn.trinea.android.common.service.impl.ImageSDCardCache;
 import cn.trinea.android.common.util.SqliteUtils;
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * ImageSDCardCacheDao

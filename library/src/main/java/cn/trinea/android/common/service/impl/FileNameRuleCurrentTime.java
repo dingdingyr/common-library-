@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 import cn.trinea.android.common.service.FileNameRule;
 import cn.trinea.android.common.util.FileUtils;
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * File name rule, used when saving images in {@link ImageSDCardCache}

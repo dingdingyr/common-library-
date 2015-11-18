@@ -6,8 +6,8 @@ import java.util.Map;
 import cn.trinea.android.common.constant.HttpConstants;
 import cn.trinea.android.common.service.HttpCache;
 import cn.trinea.android.common.util.HttpUtils;
-import cn.wehax.common.util.StringUtils;
-import cn.trinea.android.common.util.TimeUtils;
+import wehax.util.StringUtils;
+import wehax.util.TimeUtils;
 
 /**
  * <strong>HttpResponse</strong><br/>

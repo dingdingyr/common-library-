@@ -2,7 +2,7 @@ package cn.trinea.android.common.util;
 
 import java.util.Random;
 
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * Random Utils

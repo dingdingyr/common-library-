@@ -21,8 +21,8 @@ import cn.trinea.android.common.entity.FailedReason.FailedType;
 import cn.trinea.android.common.service.CacheFullRemoveType;
 import cn.trinea.android.common.util.ImageUtils;
 import cn.trinea.android.common.util.SizeUtils;
-import cn.wehax.common.util.StringUtils;
-import cn.wehax.common.util.SystemUtils;
+import wehax.util.StringUtils;
+import wehax.util.SystemUtils;
 
 /**
  * <strong>Image Memory Cache</strong><br/>

@@ -1,19 +1,19 @@
-package cn.wehax.common.widget;
+package wehax.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ListView;
+import android.widget.GridView;
 
-public class ExpandableListView extends ListView {
+public class ExpandableGridView extends GridView {
 
 	private boolean canExtend = false;
 
-	public ExpandableListView(Context context) {
+	public ExpandableGridView(Context context) {
 		super(context);
 
 	}
 
-	public ExpandableListView(Context context, AttributeSet attrs) {
+	public ExpandableGridView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
 
@@ -26,6 +26,7 @@ public class ExpandableListView extends ListView {
 		} else {
 			super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 		}
+
 	}
 
 	/**

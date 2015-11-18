@@ -1,16 +1,16 @@
 package cn.trinea.android.common.dao.impl;
 
+import android.content.ContentValues;
+import android.database.Cursor;
+
 import java.util.HashMap;
 import java.util.Map;
 
-import android.content.ContentValues;
-import android.database.Cursor;
 import cn.trinea.android.common.constant.DbConstants;
 import cn.trinea.android.common.dao.HttpCacheDao;
 import cn.trinea.android.common.entity.HttpResponse;
 import cn.trinea.android.common.util.SqliteUtils;
-import cn.wehax.common.util.StringUtils;
-import cn.trinea.android.common.util.TimeUtils;
+import wehax.util.StringUtils;
 
 /**
  * HttpCacheDaoImpl
@@ -143,7 +143,7 @@ public class HttpCacheDaoImpl implements HttpCacheDao {
         values.put(DbConstants.HTTP_CACHE_TABLE_URL, httpResponse.getUrl());
         values.put(DbConstants.HTTP_CACHE_TABLE_RESPONSE, httpResponse.getResponseBody());
         values.put(DbConstants.HTTP_CACHE_TABLE_EXPIRES, httpResponse.getExpiredTime());
-        values.put(DbConstants.HTTP_CACHE_TABLE_CREATE_TIME, TimeUtils.getCurrentTimeInString());
+//        values.put(DbConstants.HTTP_CACHE_TABLE_CREATE_TIME, TimeUtils.getCurrentTimeInString());
         values.put(DbConstants.HTTP_CACHE_TABLE_TYPE, httpResponse.getType());
         return values;
     }

@@ -16,7 +16,7 @@ import cn.trinea.android.common.service.CacheFullRemoveType;
 import cn.trinea.android.common.util.ListUtils;
 import cn.trinea.android.common.util.ObjectUtils;
 import cn.trinea.android.common.util.SerializeUtils;
-import cn.wehax.common.util.SystemUtils;
+import wehax.util.SystemUtils;
 
 /**
  * <strong>Preload data cache</strong>, It a good choice for network application which need to preload data.<br/>

@@ -16,7 +16,7 @@ import android.os.Build;
 import android.provider.Settings;
 import android.util.Log;
 import cn.trinea.android.common.util.ShellUtils.CommandResult;
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * PackageUtils

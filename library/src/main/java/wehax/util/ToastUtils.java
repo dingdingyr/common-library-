@@ -1,4 +1,4 @@
-package cn.wehax.common.util;
+package wehax.util;
 
 import android.content.Context;
 import android.widget.Toast;

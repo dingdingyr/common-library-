@@ -20,8 +20,8 @@ import cn.trinea.android.common.service.impl.ImageCache;
 import cn.trinea.android.common.util.ArrayUtils;
 import cn.trinea.android.common.util.HttpUtils;
 import cn.trinea.android.common.util.SqliteUtils;
-import cn.wehax.common.util.StringUtils;
-import cn.wehax.common.util.SystemUtils;
+import wehax.util.StringUtils;
+import wehax.util.SystemUtils;
 
 /**
  * <strong>Http Cache</strong><br/>

@@ -8,7 +8,7 @@ import java.util.List;
 
 import android.content.Context;
 
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * ResourceUtils

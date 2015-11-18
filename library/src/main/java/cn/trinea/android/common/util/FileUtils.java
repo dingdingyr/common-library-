@@ -13,7 +13,7 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * File Utils

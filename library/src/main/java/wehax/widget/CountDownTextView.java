@@ -1,4 +1,4 @@
-package cn.wehax.common.widget;
+package wehax.widget;
 
 import android.content.Context;
 import android.os.Handler;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import cn.wehax.common.util.TimeUtils;
+import wehax.util.TimeUtils;
 
 /**
  * 倒计时TextView

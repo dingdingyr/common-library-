@@ -28,8 +28,8 @@ import cn.trinea.android.common.util.FileUtils;
 import cn.trinea.android.common.util.ImageUtils;
 import cn.trinea.android.common.util.SizeUtils;
 import cn.trinea.android.common.util.SqliteUtils;
-import cn.wehax.common.util.StringUtils;
-import cn.wehax.common.util.SystemUtils;
+import wehax.util.StringUtils;
+import wehax.util.SystemUtils;
 
 /**
  * <strong>Image SDCard Cache</strong><br/>

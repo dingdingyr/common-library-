@@ -16,7 +16,7 @@ import cn.trinea.android.common.constant.HttpConstants;
 import cn.trinea.android.common.entity.HttpRequest;
 import cn.trinea.android.common.entity.HttpResponse;
 import cn.trinea.android.common.service.HttpCache;
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * HttpUtils

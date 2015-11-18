@@ -10,7 +10,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import cn.wehax.common.util.StringUtils;
+import wehax.util.StringUtils;
 
 /**
  * Json Utils
